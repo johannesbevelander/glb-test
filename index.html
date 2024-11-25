@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="justrite-type-1-safety-can-FNL-2-gallon.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate environment-image="music_hall_01_1k.hdr" camera-orbit="49.55deg 88.55deg 1.155m" field-of-view="30deg">
+      <button class="Hotspot" slot="hotspot-1" data-position="0.0004642797076782196m 0.20138408370668462m 0.24864652552292854m" data-normal="0.06900265036563344m 0.6299292181017143m 0.773581162144142m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Funnel</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="0.11920580439384643m 0.162046423292443m 0.0020923944220983537m" data-normal="0.9982656176894009m -2.0150574754975408e-9m 0.058870676394951194m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">safety can</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  </body>
+</html>
